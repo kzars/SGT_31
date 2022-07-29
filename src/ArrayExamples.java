@@ -1,4 +1,4 @@
-import com.sun.security.jgss.GSSUtil;
+import java.util.Arrays;
 
 public class ArrayExamples {
     public static void main(String[] args) {
@@ -32,6 +32,21 @@ public class ArrayExamples {
         //Print out all elements
         for(int i = 0; i < grades.length; i++){
             System.out.print(grades[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println(Arrays.toString(grades));
+
+
+        //Example
+        int table[] = {1, 2, 3, 4, 5, 6};
+        for (int i = 0; i < table.length; i++) {
+            int value = table[i];
+            if (value % 2 == 0) {
+                System.out.println("even number: " + value);
+            } else {
+                System.out.println("odd number: " + value);
+            }
         }
 
 
