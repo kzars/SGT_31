@@ -30,7 +30,5 @@ public class ChristmasTree {
         }
 
         System.out.println("#");
-
-
     }
 }
