@@ -66,5 +66,7 @@ public class StringExamples {
         System.out.println(Boolean.parseBoolean(boolValue));
         System.out.println(Long.parseLong(longValue));
 
+        //Test comment
+
     }
 }
