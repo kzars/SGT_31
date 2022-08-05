@@ -17,6 +17,13 @@ public class CreateArray {
             System.out.println("Please enter element number: " + (i+1));
             myArray[i] = scanner.nextInt();
         }
+/*        for (int i = size-1 ; i >= 0; i--){
+            myArray[i] = scanner.nextInt();
+        }
+
+        for (int counter = 103; counter < 108; counter++){
+            System.out.println("Hello world");
+        }*/
 
         System.out.print("Source Array: ");
         for(int i = 0; i < size; i++){

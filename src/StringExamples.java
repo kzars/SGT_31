@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class StringExamples {
     public static void main(String[] args) {
 
@@ -36,6 +38,7 @@ public class StringExamples {
         //STRING CLASS METHODS - INDEXOF()
         String speakingText = "This is test value";
         System.out.println(speakingText.indexOf('e'));
+        System.out.println(speakingText.lastIndexOf("e"));
         System.out.println(speakingText.indexOf(" is "));
 
         //REPLACEALL()
@@ -67,6 +70,20 @@ public class StringExamples {
         System.out.println(Long.parseLong(longValue));
 
         //Test comment
+
+        //Trim method
+        System.out.println("      This is test    ".trim());
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter password (qwert*)");
+        String pswd = scanner.nextLine().trim().toLowerCase();
+
+        if (pswd.equals("qwerty")){
+            System.out.println("Password correct");
+        } else {
+            System.out.println("Incorrect password");
+        }
+
 
     }
 }
