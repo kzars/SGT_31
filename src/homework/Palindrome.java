@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Palindrome {
     public static void main(String[] args) {
 
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter name");
         String input = scanner.nextLine().trim().toLowerCase().replaceAll(" ","");

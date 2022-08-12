@@ -6,11 +6,14 @@ public class LeapYearInMethod {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Input any year");
+        System.out.println("basics.Input any year");
         int year = scanner.nextInt();
         determinLeapYear(year);
         determinLeapYear(2004);
         determinLeapYear(1992);
+
+        String result = determinLeapYearString(1853);
+        System.out.println(result);
 
     }
 
@@ -19,6 +22,14 @@ public class LeapYearInMethod {
             System.out.println("Leap year");
         } else {
             System.out.println("Not a leap year");
+        }
+    }
+
+    public static String determinLeapYearString(int year){
+        if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0 ){
+            return year + " Leap year";
+        } else {
+            return  year + " Not a leap year";
         }
     }
 
